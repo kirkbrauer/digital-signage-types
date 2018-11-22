@@ -1,0 +1,6 @@
+{
+  "name": "digital-signage-types",
+  "version": "1.0.0",
+  "author": "Kirk Brauer",
+  "types": "index.d.ts"
+}
