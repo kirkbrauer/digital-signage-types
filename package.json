@@ -3,5 +3,10 @@
   "version": "1.0.0",
   "author": "Kirk Brauer",
   "types": "index",
-  "main": ""
+  "main": "",
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.1.6"
+  }
 }

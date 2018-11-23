@@ -8,7 +8,7 @@ export * from './Color';
 export * from './BorderStyle';
 export * from './SolidFill';
 export * from './TextStyle';
-export * from './WidgetType'
+export * from './WidgetType';
 
 /**
  * Represents a widget.
