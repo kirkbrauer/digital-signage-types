@@ -2,11 +2,21 @@
   "name": "digital-signage-types",
   "version": "1.0.0",
   "author": "Kirk Brauer",
-  "types": "index",
-  "main": "",
+  "types": "lib/index.d.ts",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "precommit": [
+    "build"
+  ],
   "devDependencies": {
+    "pre-commit": "^1.2.2",
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.1",
     "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "tslib": "^1.9.3"
   }
 }

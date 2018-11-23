@@ -3,7 +3,7 @@ import { Color } from './Color';
 /**
  * Represents a style applied to a block of text.
  */
-export class TextStyle {
+export interface TextStyle {
 
   /**
    * The text background color.

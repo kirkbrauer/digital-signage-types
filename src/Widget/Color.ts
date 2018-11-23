@@ -1,7 +1,7 @@
 /**
  * Represents a RGB color.
  */
-export class Color {
+export interface Color {
   
   /**
    * The red value.
