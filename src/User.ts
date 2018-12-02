@@ -1,5 +1,7 @@
 import { Device } from './Device';
 import { DeviceGroup } from './DeviceGroup';
+import { Page } from './Page';
+import { Slideshow } from './Slideshow';
 
 /**
  * Represents the name of a user.
@@ -23,4 +25,6 @@ export interface User {
   photoUrl: string;
   devices: Device[];
   deviceGroups: DeviceGroup[];
+  pages: Page[];
+  slideshows: Slideshow[];
 }
