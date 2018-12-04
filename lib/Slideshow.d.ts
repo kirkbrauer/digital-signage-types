@@ -9,6 +9,10 @@ export interface Slideshow {
      */
     id: string;
     /**
+     * The short identifier of the Slideshow.
+     */
+    shortid: string;
+    /**
      * The name of the slideshow.
      */
     name?: string;

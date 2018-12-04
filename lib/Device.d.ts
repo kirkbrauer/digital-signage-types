@@ -26,6 +26,7 @@ export declare enum DeviceRole {
  */
 export interface Device {
     id: string;
+    shortid: string;
     name: string;
     description?: string;
     type: DeviceType;

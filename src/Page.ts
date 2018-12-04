@@ -12,6 +12,11 @@ export interface Page {
   id: string;
 
   /**
+   * The short identifier of the page.
+   */
+  shortid: string;
+
+  /**
    * The name of the page.
    */
   name?: string;

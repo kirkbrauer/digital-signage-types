@@ -22,8 +22,8 @@ export enum TransitionType {
  */
 export interface Slide {
 
-   /**
-   * The unique identifier of the Slideshow.
+  /**
+   * The unique identifier of the Slid.
    */
   id: string;
 

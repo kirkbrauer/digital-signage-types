@@ -20,8 +20,8 @@ export declare enum TransitionType {
  */
 export interface Slide {
     /**
-    * The unique identifier of the Slideshow.
-    */
+     * The unique identifier of the Slid.
+     */
     id: string;
     /**
      * The duration of the slide in seconds.
