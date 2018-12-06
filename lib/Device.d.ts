@@ -1,4 +1,6 @@
 import { DeviceGroup } from './DeviceGroup';
+import { Page } from './Page';
+import { Slideshow } from './Slideshow';
 /**
  * The device type.
  */
@@ -35,4 +37,6 @@ export interface Device {
     group: DeviceGroup | null;
     height: number;
     width: number;
+    page: Page;
+    slideshow: Slideshow;
 }
