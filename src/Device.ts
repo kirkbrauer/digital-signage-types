@@ -41,6 +41,6 @@ export interface Device {
   group: DeviceGroup | null;
   height: number;
   width: number;
-  page: Page;
-  slideshow: Slideshow;
+  currentPage?: Page;
+  currentSlideshow?: Slideshow;
 }
