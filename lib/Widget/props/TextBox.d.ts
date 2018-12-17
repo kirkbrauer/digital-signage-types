@@ -8,5 +8,5 @@ export interface TextBox extends BaseProps {
      *
      * This content is stored in the raw draft.js format.
      */
-    text: any;
+    text?: any;
 }

@@ -30,7 +30,7 @@ export interface BaseProps {
     /**
      * The widget's fill.
      */
-    fill: SolidFill;
+    fill?: SolidFill;
     /**
      * The height.
      */
