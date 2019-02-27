@@ -1,4 +1,5 @@
 import { User } from './User';
+import { RootState } from 'ory-editor-core/lib/types/state';
 
 /**
  * Represents a page of content.
@@ -28,7 +29,7 @@ export interface Page {
   /**
    * The document to display on the page.
    */
-  document?: any;
+  document?: RootState;
 
   /**
    * The owners of the page.
