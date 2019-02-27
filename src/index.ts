@@ -1,4 +1,3 @@
-export * from './Widget';
 export * from './Auth';
 export * from './Device';
 export * from './DeviceGroup';

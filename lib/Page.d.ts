@@ -1,4 +1,3 @@
-import { Widget } from './Widget';
 import { User } from './User';
 /**
  * Represents a page of content.
@@ -21,9 +20,9 @@ export interface Page {
      */
     description?: string;
     /**
-     * The root widget of the page.
+     * The document to display on the page.
      */
-    widget?: Widget;
+    document?: any;
     /**
      * The owners of the page.
      */
