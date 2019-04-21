@@ -1,10 +1,10 @@
-import { Slide } from './Slide';
-import { User } from './User';
+import { ISlide } from './Slide';
+import { IUser } from './User';
 
 /**
  * Represents a group of slides.
  */
-export interface Slideshow {
+export interface ISlideshow {
 
   /**
    * The unique identifier of the Slideshow.
@@ -44,11 +44,11 @@ export interface Slideshow {
   /**
    * All the slides in the slideshow.
    */
-  slides?: Slide[];
+  slides?: ISlide[];
 
   /**
    * The owners of the slideshow.
    */
-  owners?: User[];
+  owners?: IUser[];
 
 }

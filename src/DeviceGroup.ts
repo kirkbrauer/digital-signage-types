@@ -1,11 +1,11 @@
-import { Device } from './Device';
+import { IDevice } from './Device';
 
 /**
  * Represents a device group.
  */
-export interface DeviceGroup {
+export interface IDeviceGroup {
   id: string;
   name: string;
   description?: string;
-  devices: Device[];
+  devices: IDevice[];
 }

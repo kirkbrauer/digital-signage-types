@@ -1,5 +1,5 @@
-import { Page } from './Page';
-import { Slideshow } from './Slideshow';
+import { IPage } from './Page';
+import { ISlideshow } from './Slideshow';
 
 /**
  * The type of transition between slides.
@@ -20,7 +20,7 @@ export enum TransitionType {
 /**
  * Represents a single slide.
  */
-export interface Slide {
+export interface ISlide {
 
   /**
    * The unique identifier of the Slid.
@@ -40,11 +40,11 @@ export interface Slide {
   /**
    * The page to be displayed by this slide.
    */
-  page?: Page;
+  page?: IPage;
 
   /**
    * The parent slideshow.
    */
-  slideshow?: Slideshow;
+  slideshow?: ISlideshow;
 
 }

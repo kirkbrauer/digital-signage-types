@@ -1,9 +1,9 @@
-import { User } from './User';
+import { IUser } from './User';
 import { RootState } from 'ory-editor-core/lib/types/state';
 /**
  * Represents a page of content.
  */
-export interface Page {
+export interface IPage {
     /**
      * The unique identifier of the Page.
      */
@@ -27,5 +27,5 @@ export interface Page {
     /**
      * The owners of the page.
      */
-    owners?: User[];
+    owners?: IUser[];
 }

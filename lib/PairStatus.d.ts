@@ -1,8 +1,8 @@
-import { Device } from './Device';
+import { IDevice } from './Device';
 /**
  * Represents the pair status of a device.
  */
-export interface PairStatus extends Device {
+export interface IPairStatus extends IDevice {
     id: string;
     pairCode: string;
     token: string;

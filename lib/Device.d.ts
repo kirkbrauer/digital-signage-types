@@ -1,6 +1,6 @@
-import { DeviceGroup } from './DeviceGroup';
-import { Page } from './Page';
-import { Slideshow } from './Slideshow';
+import { IDeviceGroup } from './DeviceGroup';
+import { IPage } from './Page';
+import { ISlideshow } from './Slideshow';
 /**
  * The device type.
  */
@@ -26,7 +26,7 @@ export declare enum DeviceRole {
 /**
  * Represents  adevice
  */
-export interface Device {
+export interface IDevice {
     id: string;
     shortid: string;
     name: string;
@@ -34,9 +34,9 @@ export interface Device {
     type: DeviceType;
     orientation: DeviceOrientation;
     role: DeviceRole;
-    group: DeviceGroup | null;
+    group: IDeviceGroup | null;
     height: number;
     width: number;
-    currentPage?: Page;
-    currentSlideshow?: Slideshow;
+    currentPage?: IPage;
+    currentSlideshow?: ISlideshow;
 }

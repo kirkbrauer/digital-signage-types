@@ -1,4 +1,4 @@
-export * from './Auth';
+export * from './TokenData';
 export * from './Device';
 export * from './DeviceGroup';
 export * from './User';
