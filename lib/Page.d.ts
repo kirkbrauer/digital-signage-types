@@ -1,5 +1,5 @@
 import { IUser } from './User';
-import { RootState } from 'ory-editor-core/lib/types/state';
+import { RawDocument } from 'digital-signage-editor';
 /**
  * Represents a page of content.
  */
@@ -23,7 +23,7 @@ export interface IPage {
     /**
      * The document to display on the page.
      */
-    document?: RootState;
+    document?: RawDocument;
     /**
      * The owners of the page.
      */

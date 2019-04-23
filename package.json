@@ -17,7 +17,7 @@
     "typescript": "^3.1.6"
   },
   "dependencies": {
-    "ory-editor-core": "^0.6.0",
+    "digital-signage-editor": "https://github.com/kirkbrauer/digital-signage-editor",
     "tslib": "^1.9.3"
   }
 }
