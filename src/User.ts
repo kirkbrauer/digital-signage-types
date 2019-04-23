@@ -27,15 +27,13 @@ export interface IName {
  */
 export interface IUser {
   id: string;
-  provider?: string;
-  providerId?: string;
-  displayName: string;
+  provider: string | null;
+  providerId: string | null;
+  displayName: string | null;
   name: IName;
   email: string;
-  roles?: Role[];
-  password?: string;
+  roles: Role[];
   photoUrl: string;
-  refreshToken?: string;
   devices: IDevice[];
   deviceGroups: IDeviceGroup[];
   pages: IPage[];

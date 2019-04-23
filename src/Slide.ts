@@ -21,30 +21,9 @@ export enum TransitionType {
  * Represents a single slide.
  */
 export interface ISlide {
-
-  /**
-   * The unique identifier of the Slid.
-   */
   id: string;
-
-  /**
-   * The duration of the slide in seconds.
-   */
-  duration?: number;
-
-  /**
-   * The transition to the next slide.
-   */
-  transition?: TransitionType;
-
-  /**
-   * The page to be displayed by this slide.
-   */
-  page?: IPage;
-
-  /**
-   * The parent slideshow.
-   */
-  slideshow?: ISlideshow;
-
+  duration: number | null;
+  transition: TransitionType | null;
+  page: IPage | null;
+  slideshow: ISlideshow | null;
 }

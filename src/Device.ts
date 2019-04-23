@@ -1,6 +1,7 @@
 import { IDeviceGroup } from './DeviceGroup';
 import { IPage } from './Page';
 import { ISlideshow } from './Slideshow';
+import { IUser } from './User';
 
 /**
  * The device type.
@@ -28,19 +29,20 @@ export enum DeviceRole {
 }
 
 /**
- * Represents  adevice
+ * Represents a device.
  */
 export interface IDevice {
   id: string;
   shortid: string;
-  name: string;
-  description?: string;
-  type: DeviceType;
-  orientation: DeviceOrientation;
-  role: DeviceRole;
+  name: string | null;
+  description: string | null;
+  type: DeviceType | null;
+  orientation: DeviceOrientation | null;
+  role: DeviceRole | null;
   group: IDeviceGroup | null;
-  height: number;
-  width: number;
-  currentPage?: IPage;
-  currentSlideshow?: ISlideshow;
+  height: number | null;
+  width: number | null;
+  currentPage: IPage | null;
+  currentSlideshow: ISlideshow | null;
+  owners: IUser[];
 }
