@@ -29,7 +29,7 @@ export declare enum DeviceRole {
  */
 export interface IDevice {
     id: string;
-    shortid: string;
+    pairCode: string;
     name: string | null;
     description: string | null;
     type: DeviceType | null;

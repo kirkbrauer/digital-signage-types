@@ -3,13 +3,19 @@ import { IDeviceGroup } from './DeviceGroup';
 import { IPage } from './Page';
 import { ISlideshow } from './Slideshow';
 /**
+ * An enum of user providers.
+ */
+export declare enum Provider {
+    GOOGLE = "GOOGLE"
+}
+/**
  * An enum of user roles.
  */
 export declare enum Role {
-    USER = "user",
-    ADMIN = "admin",
-    UNPAIRED_DEVICE = "unpairedDevice",
-    PAIRED_DEVICE = "pairedDevice"
+    USER = "USER",
+    ADMIN = "ADMIN",
+    UNPAIRED_DEVICE = "UNPAIRED_DEVICE",
+    PAIRED_DEVICE = "PAIRED_DEVICE"
 }
 /**
  * Represents the name of a user.
@@ -24,7 +30,7 @@ export interface IName {
  */
 export interface IUser {
     id: string;
-    provider: string | null;
+    provider: Provider | null;
     providerId: string | null;
     displayName: string | null;
     name: IName;
