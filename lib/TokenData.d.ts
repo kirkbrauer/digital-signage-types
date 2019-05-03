@@ -9,4 +9,5 @@ export interface ITokenData {
     expires: number;
     sub: string;
     user?: IUser;
+    tokenId: string;
 }
